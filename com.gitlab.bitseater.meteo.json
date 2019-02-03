@@ -33,16 +33,6 @@
     ],
     "modules" : [
         {
-            "name" : "champlain",
-            "sources" : [
-                {
-                    "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/libchamplain/0.12/libchamplain-0.12.16.tar.xz",
-                    "sha256" : "4a7e31cf7889669aebf04631543af64435edd989685159b804911c6005db908d"
-                }
-            ]
-        },
-        {
             "name" : "geocode-glib",
             "sources" : [
                 {
@@ -60,7 +50,7 @@
                 "--disable-doc",
                 "--disable-dumper"
             ],
-            "make-install-args": [
+            "make-install-args" : [
                 "girdir=/app/share/gir-1.0",
                 "typelibdir=/app/lib/girepository-1.0"
             ],
@@ -136,8 +126,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://gitlab.com/bitseater/meteo/-/archive/0.9.0/meteo-0.9.0.tar.gz",
-                    "sha256" : "81af5abd20bfdd3f814213033481f915e2eadc0b99a838bfd1b85f651b414c00"
+                    "url" : "https://gitlab.com/bitseater/meteo/-/archive/0.9.5/meteo-0.9.5.tar.gz",
+                    "sha256" : "ae2a02156449ff9b7fc521065229684852a2a1396528f921119cb07c543af003"
                 }
             ]
         }
