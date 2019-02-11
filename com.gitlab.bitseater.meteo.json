@@ -126,8 +126,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://gitlab.com/bitseater/meteo/-/archive/0.9.5/meteo-0.9.5.tar.gz",
-                    "sha256" : "7184cc352752350edca31dd6981c35ce9a7c67cabae9bbb47eebe0bb7bfb3c51"
+                    "url" : "https://gitlab.com/bitseater/meteo/-/archive/0.9.6/meteo-0.9.6.tar.gz",
+                    "sha256" : "6ab3edea22a8835d8d6ea920944857400c2b3e49c74c35007d6ed1cbf38d5b83"
                 }
             ]
         }
