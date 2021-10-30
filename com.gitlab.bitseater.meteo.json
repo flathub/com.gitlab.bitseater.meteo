@@ -26,6 +26,7 @@
         "--metadata=X-DConf=migrate-path=/com/gitlab/bitseater/meteo/"
     ],
     "modules" : [
+        "shared-modules/libappindicator/libappindicator-gtk3-introspection-12.10.json",
         {
             "name" : "meteo",
             "buildsystem" : "meson",
@@ -35,8 +36,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://gitlab.com/bitseater/meteo/-/archive/0.9.8/meteo-0.9.8.tar.gz",
-                    "sha256" : "22d8132e9c3bc62b3ec090275abd8b211d9d99b89812dc69e987cd315f898d0d"
+                    "url" : "https://gitlab.com/bitseater/meteo/-/archive/0.9.9/meteo-0.9.9.tar.gz",
+                    "sha256" : "dea9dd25da3d792d0713a3761b5c43ca8dad54a4eb17a8d688212a9acfafd855"
                 }
             ]
         }
