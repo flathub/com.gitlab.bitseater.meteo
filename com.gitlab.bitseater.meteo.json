@@ -15,20 +15,18 @@
     ],
     "finish-args" : [
         "--share=ipc",
-        "--share=network",
         "--socket=fallback-x11",
-        "--socket=x11",
+        "--device=dri",
         "--socket=wayland",
-        "--socket=session-bus",
-        "--device=all",
+        "--share=network",
+        "--system-talk-name=org.freedesktop.GeoClue2",
         "--talk-name=org.kde.StatusNotifierWatcher",
-        "--talk-name=org.ayatana.indicator.application",
         "--metadata=X-DConf=migrate-path=/com/gitlab/bitseater/meteo/"
     ],
     "modules" : [
         "shared-modules/libappindicator/libappindicator-gtk3-introspection-12.10.json",
         {
-            "name" : "meteo",
+            "name" : "weather",
             "buildsystem" : "meson",
             "config-opts" : [
                 "--buildtype=release"
