@@ -7,12 +7,12 @@
     "cleanup" : [
         "/include",
         "/lib/pkgconfig",
-        "/lib/debug",
         "/share/vala",
         "/man",
         "*.a",
         "*.la"
     ],
+    "only-arches": ["x86_64"],
     "finish-args" : [
         "--share=ipc",
         "--socket=fallback-x11",
@@ -34,8 +34,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://gitlab.com/bitseater/meteo/-/archive/0.9.9.1/meteo-0.9.9.1.tar.gz",
-                    "sha256" : "4ad84263db38d147af7cd71f1e8f99158b5d3cdf092f6ca2e7cd42ab9f507161"
+                    "url" : "https://gitlab.com/bitseater/meteo/-/archive/0.9.9.2/meteo-0.9.9.2.tar.gz",
+                    "sha256" : "92586c002504f633202fb41f12fddc1d46d3f23ea44b6cfb7a9be0b309098e36"
                 }
             ]
         }
