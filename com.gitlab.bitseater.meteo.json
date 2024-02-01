@@ -35,7 +35,7 @@
                 {
                     "type" : "archive",
                     "url" : "https://gitlab.com/bitseater/meteo/-/archive/0.9.9.3/meteo-0.9.9.3.tar.gz",
-                    "sha256" : "ad276095c915ca526808d21d47b46316349b2963b1625e86b86608ca93b7b57a"
+                    "sha256" : "fa8bca52c3c5914cb362296bb2e3d4337ef5251f1340cf1093f2d713c378c293"
                 }
             ]
         }
