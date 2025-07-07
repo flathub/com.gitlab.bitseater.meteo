@@ -17,6 +17,7 @@
         "*.la",
         "*.a"
     ],
+    "only-arches": ["x86_64"],
     "finish-args": [
         "--share=ipc",
         "--socket=fallback-x11",
