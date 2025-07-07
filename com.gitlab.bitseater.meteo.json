@@ -1,7 +1,7 @@
 {
     "app-id" : "com.gitlab.bitseater.meteo",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "46",
+    "runtime-version" : "48",
     "sdk" : "org.gnome.Sdk",
     "command" : "com.gitlab.bitseater.meteo",
     "cleanup" : [
@@ -17,7 +17,6 @@
         "*.la",
         "*.a"
     ],
-    "only-arches": ["x86_64"],
     "finish-args" : [
         "--share=ipc",
         "--socket=fallback-x11",
@@ -60,14 +59,19 @@
                 "-DENABLE_WEBDRIVER=OFF",
                 "-DUSE_GTK4=OFF",
                 "-DUSE_LIBBACKTRACE=OFF",
-                "-DUSE_JPEGXL=OFF",
-                "-DUSE_SOUP2=ON"
+                "-DUSE_SOUP2=ON",
+                "-DENABLE_SPEECH_SYNTHESIS=OFF"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://webkitgtk.org/releases/webkitgtk-2.44.1.tar.xz",
-                    "sha256": "425b1459b0f04d0600c78d1abb5e7edfa3c060a420f8b231e9a6a2d5d29c5561"
+                    "url": "https://webkitgtk.org/releases/webkitgtk-2.49.3.tar.xz",
+                    "sha256": "25f465bd1f7d615da9f5089575c58c8fbaf26d951de6adc569690e59319d72c1",
+                    "x-checker-data": {
+    "type": "anitya",
+    "project-id": 5355,
+    "url-template": "https://webkitgtk.org/releases/webkitgtk-$version.tar.xz"
+}
                 }
             ]
         },
@@ -81,7 +85,12 @@
                 {
                     "type" : "archive",
                     "url" : "https://gitlab.com/bitseater/meteo/-/archive/0.9.9.3/meteo-0.9.9.3.tar.gz",
-                    "sha256" : "fa8bca52c3c5914cb362296bb2e3d4337ef5251f1340cf1093f2d713c378c293"
+                    "sha256" : "fa8bca52c3c5914cb362296bb2e3d4337ef5251f1340cf1093f2d713c378c293",
+                    "x-checker-data": {
+    "type": "anitya",
+    "project-id": 27564,
+    "url-template": "https://gitlab.com/bitseater/meteo/-/archive/$version/meteo-$version.tar.gz"
+}
                 },
                 {
                     "type" : "patch",
