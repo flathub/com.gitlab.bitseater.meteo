@@ -1,7 +1,7 @@
 {
     "app-id": "com.gitlab.bitseater.meteo",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "48",
+    "runtime-version": "49",
     "sdk": "org.gnome.Sdk",
     "command": "com.gitlab.bitseater.meteo",
     "cleanup": [
@@ -59,14 +59,15 @@
                 "-DENABLE_WEBDRIVER=OFF",
                 "-DUSE_GTK4=OFF",
                 "-DUSE_LIBBACKTRACE=OFF",
+                "-DUSE_JPEGXL=OFF",
                 "-DUSE_SOUP2=ON",
                 "-DENABLE_SPEECH_SYNTHESIS=OFF"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://webkitgtk.org/releases/webkitgtk-2.49.3.tar.xz",
-                    "sha256": "25f465bd1f7d615da9f5089575c58c8fbaf26d951de6adc569690e59319d72c1",
+                    "url": "https://webkitgtk.org/releases/webkitgtk-2.51.3.tar.xz",
+                    "sha256": "fdf6767ebcbb88b5c36f687529ac5a138f9cd9d290f54f1d2416efbbbd31fbca",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5355,
