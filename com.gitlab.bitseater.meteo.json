@@ -71,12 +71,7 @@
                 {
                     "type": "archive",
                     "url": "https://webkitgtk.org/releases/webkitgtk-2.51.3.tar.xz",
-                    "sha256": "fdf6767ebcbb88b5c36f687529ac5a138f9cd9d290f54f1d2416efbbbd31fbca",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 5355,
-                        "url-template": "https://webkitgtk.org/releases/webkitgtk-$version.tar.xz"
-                    }
+                    "sha256": "fdf6767ebcbb88b5c36f687529ac5a138f9cd9d290f54f1d2416efbbbd31fbca"
                 }
             ]
         },
