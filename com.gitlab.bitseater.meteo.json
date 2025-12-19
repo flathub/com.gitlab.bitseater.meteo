@@ -88,7 +88,6 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.com/bitseater/meteo.git",
-                    "branch" : "master",
                     "commit" : "b6a9d4a60d97744a5e797916879c749fb1eaeb22"
                 }
             ]
