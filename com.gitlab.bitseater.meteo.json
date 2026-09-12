@@ -4,53 +4,29 @@
     "runtime-version" : "50",
     "sdk" : "org.gnome.Sdk",
     "command" : "com.gitlab.bitseater.meteo",
-    "cleanup" : [
-        "/include",
-        "/lib/pkgconfig",
-        "/share/aclocal",
-        "/share/doc",
-        "/share/gettext",
-        "/share/gir-1.0",
-        "/share/man",
-        "/share/vala",
-        "/man",
-        "*.la",
-        "*.a"
-    ],
     "finish-args" : [
         "--share=ipc",
         "--socket=fallback-x11",
         "--device=dri",
         "--socket=wayland",
         "--share=network",
-        "--system-talk-name=org.freedesktop.GeoClue2",
         "--talk-name=org.kde.StatusNotifierWatcher",
+        "--talk-name=org.freedesktop.StatusNotifierWatcher",
         "--metadata=X-DConf=migrate-path=/com/gitlab/bitseater/meteo/"
     ],
     "modules" : [
-        "shared-modules/libappindicator/libappindicator-gtk3-introspection-12.10.json",
-        "webkitgtk.yml",
         {
-            "name" : "weather",
+            "name" : "meteo",
             "buildsystem" : "meson",
             "config-opts" : [
                 "--buildtype=release"
             ],
-            "//note": "workaround for non-png-icon-in-hicolor-size-folder lint error",
-            "post-install": [
-                "mkdir -p /app/share/icons/hicolor/scalable/apps",
-                "mv /app/share/icons/hicolor/128x128/apps/${FLATPAK_ID}.svg /app/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg",
-                "find /app/share/icons/hicolor -type f -not -path \"*scalable*\" -not -path \"*actions*\" -name \"*.svg\" -delete"
-            ],
             "sources" : [
                 {
-                    "type" : "archive",
-                    "url" : "https://gitlab.com/bitseater/meteo/-/archive/0.9.9.3/meteo-0.9.9.3.tar.gz",
-                    "sha256" : "fa8bca52c3c5914cb362296bb2e3d4337ef5251f1340cf1093f2d713c378c293"
-                },
-                {
-                    "type" : "patch",
-                    "path" : "fix_appdata.patch"
+                    "type" : "git",
+                    "url" : "https://gitlab.com/bitseater/meteo.git",
+                    "tag" : "1.0.0",
+                    "commit" : "30751ed43ae70aef70035d90eceedbb0f3461f65"
                 }
             ]
         }
